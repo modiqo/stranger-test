@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 370" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a6285"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="370" rx="16" fill="#0e1220"/>
+
+  <text x="140" y="32" font-size="11" fill="#98a0b8" text-anchor="middle">the page, rendered honestly</text>
+  <text x="460" y="32" font-size="11" fill="#98a0b8" text-anchor="middle">one shared evidence base</text>
+  <text x="830" y="32" font-size="11" fill="#98a0b8" text-anchor="middle">six auditors, one view</text>
+
+  <!-- browser mock -->
+  <rect x="40" y="48" width="200" height="272" rx="10" fill="#171c30" stroke="#2a3152"/>
+  <rect x="40" y="48" width="200" height="24" rx="10" fill="#202741"/>
+  <rect x="40" y="60" width="200" height="12" fill="#202741"/>
+  <circle cx="54" cy="60" r="3" fill="#ef6a6a"/>
+  <circle cx="66" cy="60" r="3" fill="#f5b642"/>
+  <circle cx="78" cy="60" r="3" fill="#3ecf8e"/>
+  <rect x="52" y="84" width="176" height="52" rx="6" fill="#232a4a"/>
+  <rect x="60" y="94" width="120" height="7" rx="3" fill="#4a548a"/>
+  <rect x="60" y="106" width="90" height="5" rx="2.5" fill="#39406a"/>
+  <rect x="60" y="118" width="44" height="10" rx="5" fill="#8b7cf6"/>
+  <rect x="52" y="146" width="176" height="26" rx="6" fill="#1d2340"/>
+  <rect x="60" y="154" width="100" height="5" rx="2.5" fill="#39406a"/>
+  <rect x="52" y="180" width="176" height="26" rx="6" fill="#1d2340"/>
+  <rect x="60" y="188" width="86" height="5" rx="2.5" fill="#39406a"/>
+  <rect x="52" y="214" width="176" height="26" rx="6" fill="#1d2340"/>
+  <rect x="60" y="222" width="108" height="5" rx="2.5" fill="#39406a"/>
+  <rect x="52" y="248" width="176" height="26" rx="6" fill="#1d2340"/>
+  <rect x="60" y="256" width="80" height="5" rx="2.5" fill="#39406a"/>
+  <rect x="52" y="282" width="176" height="26" rx="6" fill="#1d2340"/>
+  <rect x="60" y="290" width="96" height="5" rx="2.5" fill="#39406a"/>
+
+  <line x1="248" y1="184" x2="312" y2="184" stroke="#5a6285" marker-end="url(#arr2)"/>
+
+  <!-- inventory card -->
+  <rect x="320" y="64" width="280" height="248" rx="12" fill="#171c30" stroke="#2a3152"/>
+  <text x="340" y="94" font-size="12.5" font-weight="600" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#c9cfec">audit/inventory.md</text>
+  <text x="340" y="112" font-size="10.5" fill="#98a0b8">every stage cites this — no re-scraping</text>
+  <rect x="340" y="132" width="4" height="4" fill="#8b7cf6"/>
+  <text x="352" y="140" font-size="11.5" fill="#e8eaf2">section map — scroll order</text>
+  <rect x="340" y="160" width="4" height="4" fill="#8b7cf6"/>
+  <text x="352" y="168" font-size="11.5" fill="#e8eaf2">verbatim copy + content hash</text>
+  <rect x="340" y="188" width="4" height="4" fill="#8b7cf6"/>
+  <text x="352" y="196" font-size="11.5" fill="#e8eaf2">fold crop — first screenful</text>
+  <rect x="340" y="216" width="4" height="4" fill="#8b7cf6"/>
+  <text x="352" y="224" font-size="11.5" fill="#e8eaf2">CTA census — every click</text>
+  <rect x="340" y="244" width="4" height="4" fill="#8b7cf6"/>
+  <text x="352" y="252" font-size="11.5" fill="#e8eaf2">number census — every claim</text>
+  <rect x="340" y="272" width="4" height="4" fill="#8b7cf6"/>
+  <text x="352" y="280" font-size="11.5" fill="#e8eaf2">entry matrix — per channel</text>
+
+  <!-- fan-out curves -->
+  <path d="M600,158 C650,158 646,76 694,76" fill="none" stroke="#39406a" marker-end="url(#arr2)"/>
+  <path d="M600,170 C650,170 646,118 694,118" fill="none" stroke="#39406a" marker-end="url(#arr2)"/>
+  <path d="M600,182 C650,182 646,160 694,160" fill="none" stroke="#39406a" marker-end="url(#arr2)"/>
+  <path d="M600,194 C650,194 646,202 694,202" fill="none" stroke="#39406a" marker-end="url(#arr2)"/>
+  <path d="M600,206 C650,206 646,244 694,244" fill="none" stroke="#39406a" marker-end="url(#arr2)"/>
+  <path d="M600,218 C650,218 646,286 694,286" fill="none" stroke="#39406a" marker-end="url(#arr2)"/>
+
+  <!-- auditor chips -->
+  <rect x="700" y="60" width="260" height="32" rx="9" fill="#1d2340" stroke="#2a3152"/>
+  <circle cx="716" cy="76" r="4" fill="#8b7cf6"/>
+  <text x="830" y="80" font-size="12" fill="#e8eaf2" text-anchor="middle">Promise auditor</text>
+  <rect x="700" y="102" width="260" height="32" rx="9" fill="#1d2340" stroke="#2a3152"/>
+  <circle cx="716" cy="118" r="4" fill="#8b7cf6"/>
+  <text x="830" y="122" font-size="12" fill="#e8eaf2" text-anchor="middle">Fold auditor</text>
+  <rect x="700" y="144" width="260" height="32" rx="9" fill="#1d2340" stroke="#2a3152"/>
+  <circle cx="716" cy="160" r="4" fill="#8b7cf6"/>
+  <text x="830" y="164" font-size="12" fill="#e8eaf2" text-anchor="middle">Narrative auditor</text>
+  <rect x="700" y="186" width="260" height="32" rx="9" fill="#1d2340" stroke="#2a3152"/>
+  <circle cx="716" cy="202" r="4" fill="#8b7cf6"/>
+  <text x="830" y="206" font-size="12" fill="#e8eaf2" text-anchor="middle">Trust auditor</text>
+  <rect x="700" y="228" width="260" height="32" rx="9" fill="#1d2340" stroke="#2a3152"/>
+  <circle cx="716" cy="244" r="4" fill="#8b7cf6"/>
+  <text x="830" y="248" font-size="12" fill="#e8eaf2" text-anchor="middle">Pricing auditor</text>
+  <rect x="700" y="270" width="260" height="32" rx="9" fill="#1d2340" stroke="#2a3152"/>
+  <circle cx="716" cy="286" r="4" fill="#8b7cf6"/>
+  <text x="830" y="290" font-size="12" fill="#e8eaf2" text-anchor="middle">Action auditor</text>
+
+  <text x="500" y="350" font-size="11.5" fill="#98a0b8" text-anchor="middle">Six auditors, one view of the page — findings reconcile instead of contradicting.</text>
+</svg>

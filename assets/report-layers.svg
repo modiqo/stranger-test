@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a6285"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="350" rx="16" fill="#0e1220"/>
+
+  <!-- audit engine -->
+  <rect x="40" y="135" width="170" height="90" rx="12" fill="#171c30" stroke="#2a3152"/>
+  <text x="125" y="168" font-size="13" font-weight="600" fill="#e8eaf2" text-anchor="middle">the audit</text>
+  <text x="125" y="188" font-size="10.5" fill="#98a0b8" text-anchor="middle">6 scored stages</text>
+  <text x="125" y="204" font-size="10.5" fill="#98a0b8" text-anchor="middle">+ synthesis</text>
+
+  <path d="M210,160 C240,160 240,115 272,115" fill="none" stroke="#5a6285" marker-end="url(#arr3)"/>
+  <path d="M210,200 C240,200 240,262 272,262" fill="none" stroke="#5a6285" marker-end="url(#arr3)"/>
+
+  <!-- layer 1 -->
+  <rect x="280" y="40" width="680" height="150" rx="12" fill="#171c30" stroke="#3b3f6e"/>
+  <text x="300" y="68" font-size="13" font-weight="600" fill="#e8eaf2">Layer 1 — the briefing</text>
+  <text x="940" y="68" font-size="10.5" fill="#98a0b8" text-anchor="end">for founders · marketing · product · sales</text>
+  <text x="300" y="96" font-size="11.5" font-style="italic" fill="#c9cfec">“6.0 / 10 — the first screen loses visitors before the rest can work.”</text>
+  <text x="300" y="124" font-size="11" fill="#98a0b8">scoreboard</text>
+  <rect x="372" y="109" width="26" height="20" rx="4" fill="#1d2340" stroke="#2a3152"/>
+  <text x="385" y="123" font-size="10.5" fill="#e8eaf2" text-anchor="middle">7</text>
+  <rect x="404" y="109" width="26" height="20" rx="4" fill="#1d2340" stroke="#f5b642"/>
+  <text x="417" y="123" font-size="10.5" fill="#f5b642" text-anchor="middle">4</text>
+  <rect x="436" y="109" width="26" height="20" rx="4" fill="#1d2340" stroke="#2a3152"/>
+  <text x="449" y="123" font-size="10.5" fill="#e8eaf2" text-anchor="middle">6</text>
+  <rect x="468" y="109" width="26" height="20" rx="4" fill="#1d2340" stroke="#2a3152"/>
+  <text x="481" y="123" font-size="10.5" fill="#e8eaf2" text-anchor="middle">8</text>
+  <rect x="500" y="109" width="26" height="20" rx="4" fill="#1d2340" stroke="#2a3152"/>
+  <text x="513" y="123" font-size="10.5" fill="#e8eaf2" text-anchor="middle">7</text>
+  <rect x="532" y="109" width="26" height="20" rx="4" fill="#1d2340" stroke="#2a3152"/>
+  <text x="545" y="123" font-size="10.5" fill="#e8eaf2" text-anchor="middle">5</text>
+  <text x="576" y="124" font-size="10.5" fill="#98a0b8">plain stage names — “the first screen”, “believability”…</text>
+  <text x="300" y="152" font-size="11.5" fill="#c9cfec">top 3 fixes — exact before → after copy, ranked by what it costs you</text>
+  <text x="300" y="174" font-size="11.5" fill="#c9cfec">+ what already works — so the fixes don't break it</text>
+
+  <!-- layer 2 -->
+  <rect x="280" y="215" width="680" height="95" rx="12" fill="#171c30" stroke="#2a3152"/>
+  <text x="300" y="241" font-size="13" font-weight="600" fill="#e8eaf2">Layer 2 — the appendix</text>
+  <text x="940" y="241" font-size="10.5" fill="#98a0b8" text-anchor="end">for re-runs · the future priors ledger</text>
+  <text x="300" y="268" font-size="10.5" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#9fb0d8">{"anchor":"#s-hero","hash":"a41f0c…","severity":"major","impact":-2}</text>
+  <text x="300" y="290" font-size="10.5" fill="#98a0b8">content hashes tell re-runs: same copy → finding stands · copy changed → re-audit</text>
+
+  <text x="500" y="336" font-size="11.5" fill="#98a0b8" text-anchor="middle">Nothing decision-relevant lives only in the appendix — the briefing stands alone.</text>
+</svg>

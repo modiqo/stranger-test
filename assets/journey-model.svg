@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a6285"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="360" rx="16" fill="#0e1220"/>
+
+  <!-- journey line -->
+  <text x="54" y="88" font-size="11" fill="#98a0b8">a visitor arrives — holding a promise</text>
+  <text x="958" y="88" font-size="11" fill="#3ecf8e" text-anchor="end">…or converts</text>
+  <circle cx="40" cy="96" r="4" fill="#8b7cf6"/>
+  <line x1="48" y1="96" x2="932" y2="96" stroke="#39406a" stroke-dasharray="4 5" marker-end="url(#arr)"/>
+
+  <!-- stage boxes -->
+  <g>
+    <rect x="30" y="120" width="140" height="140" rx="12" fill="#171c30" stroke="#2a3152"/>
+    <circle cx="54" cy="146" r="12" fill="#8b7cf6"/>
+    <text x="54" y="150.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="74" y="151" font-size="13" font-weight="600" fill="#e8eaf2">Promise</text>
+    <text x="100" y="180" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">Is this what I</text>
+    <text x="100" y="196" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">clicked for?</text>
+    <text x="100" y="244" font-size="10" fill="#6d7494" text-anchor="middle">weight ×1</text>
+  </g>
+  <line x1="173" y1="190" x2="182" y2="190" stroke="#5a6285" marker-end="url(#arr)"/>
+  <g>
+    <rect x="188" y="120" width="140" height="140" rx="12" fill="#171c30" stroke="#2a3152"/>
+    <circle cx="212" cy="146" r="12" fill="#8b7cf6"/>
+    <text x="212" y="150.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="232" y="151" font-size="13" font-weight="600" fill="#e8eaf2">The Fold</text>
+    <text x="258" y="180" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">What is this, is it</text>
+    <text x="258" y="196" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">for me — what next?</text>
+    <text x="258" y="244" font-size="10" fill="#6d7494" text-anchor="middle">weight ×2</text>
+  </g>
+  <line x1="331" y1="190" x2="340" y2="190" stroke="#5a6285" marker-end="url(#arr)"/>
+  <g>
+    <rect x="346" y="120" width="140" height="140" rx="12" fill="#171c30" stroke="#2a3152"/>
+    <circle cx="370" cy="146" r="12" fill="#8b7cf6"/>
+    <text x="370" y="150.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="390" y="151" font-size="13" font-weight="600" fill="#e8eaf2">Narrative</text>
+    <text x="416" y="180" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">Does each section</text>
+    <text x="416" y="196" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">pull me onward?</text>
+    <text x="416" y="244" font-size="10" fill="#6d7494" text-anchor="middle">weight ×2</text>
+  </g>
+  <line x1="489" y1="190" x2="498" y2="190" stroke="#5a6285" marker-end="url(#arr)"/>
+  <g>
+    <rect x="504" y="120" width="140" height="140" rx="12" fill="#171c30" stroke="#2a3152"/>
+    <circle cx="528" cy="146" r="12" fill="#8b7cf6"/>
+    <text x="528" y="150.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="548" y="151" font-size="13" font-weight="600" fill="#e8eaf2">Trust</text>
+    <text x="574" y="180" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">Says who?</text>
+    <text x="574" y="196" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">What's the catch?</text>
+    <text x="574" y="244" font-size="10" fill="#6d7494" text-anchor="middle">weight ×1.5</text>
+  </g>
+  <line x1="647" y1="190" x2="656" y2="190" stroke="#5a6285" marker-end="url(#arr)"/>
+  <g>
+    <rect x="662" y="120" width="140" height="140" rx="12" fill="#171c30" stroke="#2a3152"/>
+    <circle cx="686" cy="146" r="12" fill="#8b7cf6"/>
+    <text x="686" y="150.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="706" y="151" font-size="13" font-weight="600" fill="#e8eaf2">Pricing</text>
+    <text x="732" y="180" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">What will I pay —</text>
+    <text x="732" y="196" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">will I regret it?</text>
+    <text x="732" y="244" font-size="10" fill="#6d7494" text-anchor="middle">weight ×1.5</text>
+  </g>
+  <line x1="805" y1="190" x2="814" y2="190" stroke="#5a6285" marker-end="url(#arr)"/>
+  <g>
+    <rect x="820" y="120" width="140" height="140" rx="12" fill="#171c30" stroke="#2a3152"/>
+    <circle cx="844" cy="146" r="12" fill="#8b7cf6"/>
+    <text x="844" y="150.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+    <text x="864" y="151" font-size="13" font-weight="600" fill="#e8eaf2">Action</text>
+    <text x="890" y="180" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">What happens</text>
+    <text x="890" y="196" font-size="11" font-style="italic" fill="#98a0b8" text-anchor="middle">when I click?</text>
+    <text x="890" y="244" font-size="10" fill="#6d7494" text-anchor="middle">weight ×2</text>
+  </g>
+
+  <!-- gate tags -->
+  <rect x="44" y="274" width="112" height="22" rx="11" fill="none" stroke="#f5b642"/>
+  <text x="100" y="288.5" font-size="10" fill="#f5b642" text-anchor="middle">GATE · caps at 7.0</text>
+  <rect x="202" y="274" width="112" height="22" rx="11" fill="none" stroke="#f5b642"/>
+  <text x="258" y="288.5" font-size="10" fill="#f5b642" text-anchor="middle">GATE · caps at 6.0</text>
+  <rect x="834" y="274" width="112" height="22" rx="11" fill="none" stroke="#f5b642"/>
+  <text x="890" y="288.5" font-size="10" fill="#f5b642" text-anchor="middle">GATE · caps at 6.5</text>
+
+  <text x="500" y="334" font-size="11.5" fill="#98a0b8" text-anchor="middle">A broken early stage caps the whole journey — visitors never reach the brilliance downstream.</text>
+</svg>

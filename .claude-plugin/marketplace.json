@@ -1,13 +1,13 @@
 {
-  "name": "clarity-journey-marketplace",
+  "name": "stranger-test-marketplace",
   "owner": {
     "name": "modiqo"
   },
   "plugins": [
     {
-      "name": "clarity-journey",
+      "name": "stranger-test",
       "source": "./",
-      "description": "Six-stage visitor-journey audit for landing sites: anchored 0-10 scores per stage, gate semantics, evidence-cited findings, and reference files that go to the primary sources."
+      "description": "Would a stranger convert? Six-stage visitor-journey audit for landing sites: anchored 0-10 scores per stage, gate semantics, evidence-cited findings, and reference files that go to the primary sources."
     }
   ]
 }

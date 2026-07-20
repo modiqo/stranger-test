@@ -1,6 +1,6 @@
 ---
 name: clarity-action
-description: Stage 6 of the clarity journey — friction at the point of action. Audit every conversion moment with the Fogg behavior model (motivation x ability x prompt), interaction cost, form friction, and commitment honesty. Scored 0-10; a broken primary CTA is a journey gate.
+description: Stage 6 of the stranger test — friction at the point of action. Audit every conversion moment with the Fogg behavior model (motivation x ability x prompt), interaction cost, form friction, and commitment honesty. Scored 0-10; a broken primary CTA is a journey gate.
 ---
 
 # clarity-action — the point of action
@@ -23,7 +23,7 @@ goes without creating real accounts or submitting real data.
 |---|---|---|
 | **Label honesty** (Krug) | ×2.5 | The CTA describes the actual next action in the doer's words ("Start free — no card" not "Get Started", "Empower yourself"). The mindless-click test: can the visitor predict exactly what happens after the click? |
 | **Singular primary** | ×2 | One visually primary action per screenful; competitors demoted. (Hick's law: decision time grows with alternatives; the CTA moment is the worst place for a menu.) |
-| **The click's true cost** | ×2.5 | What actually follows the click: how many fields, how many steps, card required?, email verification walls, forced account creation *before* value. Count interaction cost (NN/g) end-to-end. The first step should deliver value or visible progress, not paperwork. |
+| **The click's true cost** | ×2.5 | What actually follows the click: how many fields, how many steps, card required?, email verification walls, forced account creation *before* value. Count interaction cost (NN/g) end-to-end — and walk past the form to *first experienced value*: minutes and steps from click until the product visibly does its thing (~10 minutes is the modern patience budget). Value unreachable in the first session (sales call, day-long setup) is `major` even when the form itself is short. |
 | **Surprise audit** | ×2 | Nothing material appears post-click that wasn't disclosed pre-click (price, card, install size, permissions). Surprise at commitment is the Baymard #1 killer, generalized. |
 | **Momentum design** | ×1 | Goal-gradient (Kivetz): visible progress accelerates completion — multi-step flows show steps; started states beat blank states. Defaults do the work where honest (Johnson & Goldstein: defaults dominate outcomes) — but pre-checked consent/marketing boxes are dark-pattern findings, not momentum. |
 | **Objection at the button** | ×1 | The residual fear at each CTA ("can I undo this?", "will I be spammed?") answered *at the button* in a microcopy line, not in a FAQ. |

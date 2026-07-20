@@ -1,7 +1,7 @@
 {
-  "name": "clarity-journey",
+  "name": "stranger-test",
   "version": "0.1.0",
-  "description": "A six-stage landing-site audit that walks the visitor's journey — promise, fold, narrative, trust, pricing, action — scoring each stage against anchored rubrics grounded in the primary literature (Kahneman, Ariely, Thaler, Simonson, Krug, Sugarman, Fogg, Cialdini, Pirolli & Card, Baymard, NN/g).",
+  "description": "Would a stranger convert? A six-stage landing-site audit that walks the visitor's journey — promise, fold, narrative, trust, pricing, action — scoring each stage against anchored rubrics grounded in the primary literature (Kahneman, Ariely, Thaler, Simonson, Krug, Sugarman, Fogg, Cialdini, Pirolli & Card, Baymard, NN/g).",
   "author": {
     "name": "modiqo",
     "url": "https://github.com/modiqo"

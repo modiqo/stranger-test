@@ -1,9 +1,9 @@
 ---
-description: Run the six-stage clarity journey audit on a landing site — scored stages, gate semantics, evidence-cited findings
+description: Run the six-stage stranger test on a landing site — would a stranger convert? Scored stages, gate semantics, evidence-cited findings
 argument-hint: "[url or route] [--stage N] [--fast]"
 ---
 
-# /clarity-journey — the conductor
+# /stranger-test — the conductor
 
 Audit the site the way a visitor experiences it: six stages in the order the
 visitor meets them, each scored 0–10 against anchored bands, with **gates** —
@@ -93,11 +93,44 @@ against an anti-dark-pattern pricing doctrine; "add more CTAs" against a
 one-primary-action law. When doctrine and rubric truly conflict, surface it
 as a **tradeoff question for the owner**, not as a scored defect.
 
-## The report
+## The report — two layers, plain language first
 
-1. Scoreboard first: six stage scores + journey score + binding gate.
-2. Top 3 fixes across all stages, ranked by (severity, score_impact) — with
-   before/after rewrites where copy is the fix.
-3. Per-stage sections: score, band cited, findings in the JSON shape.
-4. A closing "what the site does *right*" list — calibration requires naming
-   what must not be broken by the fixes.
+The report's readers are founders, marketing, product, and sales — not the
+auditors. The instrument's own rules apply to its own output: it must pass
+its own 5-second test, and rubric vocabulary is curse-of-knowledge. Terms
+like *band*, *gate*, *anchor*, *hash*, *awareness stage*, *B=MAP*,
+*score_impact* never appear in Layer 1; say what the visitor experiences
+instead ("most visitors can't tell what this is within five seconds"), not
+what the instrument measured ("failed the 5-second test, band ≤6").
+
+### Layer 1 — the briefing (stands alone; a decision-maker reads only this)
+
+1. **The verdict** — one score out of 10, one sentence naming the biggest
+   problem in business terms, and the single fix that pays most. When a
+   gate binds, explain it as consequence, not mechanism: "The first screen
+   loses visitors before anything below it can work — that alone holds the
+   score at 6.0."
+2. **Scoreboard** — six rows: plain-language stage name, score, one line of
+   "what we found" in visitor terms.
+3. **Top 3 fixes** — each: the problem in one plain sentence, the exact
+   before → after (copy rewrites shown as copy), and why it pays ("this is
+   where pricing-page visitors currently stall").
+4. **What's already working** — named plainly, so the fixes don't break it.
+
+Plain-language stage names for reports (internal name may appear once, in
+parentheses):
+
+| internal | report name |
+|---|---|
+| Promise | Does the page keep the promise that brought them? |
+| Fold | The first screen |
+| Narrative | The scroll — does each section pull the reader to the next? |
+| Trust | Believability |
+| Pricing | The pricing page |
+| Action | The signup moment |
+
+### Layer 2 — the appendix (the machine layer)
+
+Per-stage sections: score, band cited, findings in the JSON shape, weights,
+hashes — the ledger a future run re-verifies. Rule: nothing decision-
+relevant lives *only* in Layer 2. Layer 1 must stand alone.

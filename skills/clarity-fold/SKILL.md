@@ -1,6 +1,6 @@
 ---
 name: clarity-fold
-description: Stage 2 of the clarity journey — the 5-second abandon-or-scroll verdict on the first screenful, plus the scroll-cue check (a fold that looks complete invites exit). The successor to single-shot landing-page clarity checks; scored 0-10 and a hard journey gate.
+description: Stage 2 of the stranger test — the 5-second abandon-or-scroll verdict on the first screenful, plus the scroll-cue check (a fold that looks complete invites exit). The successor to single-shot landing-page clarity checks; scored 0-10 and a hard journey gate.
 ---
 
 # clarity-fold — the abandon-or-scroll verdict

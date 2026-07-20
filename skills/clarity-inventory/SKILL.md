@@ -1,6 +1,6 @@
 ---
 name: clarity-inventory
-description: Phase 0 of the clarity journey — build the shared evidence base (section map, per-section copy with content hashes, fold crop, CTA census) that every scored stage consumes. Use before any clarity-* stage skill; never score anything here.
+description: Phase 0 of the stranger test — build the shared evidence base (section map, per-section copy with content hashes, fold crop, CTA census) that every scored stage consumes. Use before any clarity-* stage skill; never score anything here.
 ---
 
 # clarity-inventory — the evidence base
@@ -32,10 +32,16 @@ findings that can't be deduplicated — one inventory, six consumers.
 5. **Number census**: every quantitative claim on the page (prices, counts,
    percentages, times) with its section anchor — the trust and pricing
    stages audit specificity and consistency from this list.
-6. **Entry context**: record what brought the visitor if known (ad copy, the
-   README, a shared link's unfurl text, search snippet). The promise stage
-   audits *against* this. If unknown, record the page's own `<title>` +
-   meta description as the de-facto promise.
+6. **Entry matrix**: record every significant path that brings visitors, one
+   row per channel — paid ad copy, search snippet, the README, a shared
+   link's unfurl (fetch the og:title/og:description; advocacy traffic
+   arrives through that card), and the page's own `<title>` + meta
+   description as the direct/fallback row. For each row: the exact entry
+   copy, and the awareness stage (Schwartz) it delivers — a paid ad tends to
+   bring problem-aware visitors, a friend's link most-aware ones. Mark the
+   *primary* channel (best available traffic evidence; otherwise the
+   title/meta row). The promise stage audits message match per row; its
+   gate binds on the primary.
 
 ## Output
 
@@ -45,7 +51,10 @@ for a remote site):
 ```markdown
 # Inventory — <target> — <date>
 viewport: 1440×900 · mode: full|fast
-entry-context: "<the promise the visitor arrives holding>"
+
+## Entry matrix (the promises visitors arrive holding)
+| channel | entry copy (verbatim) | awareness stage | primary? |
+|---------|-----------------------|-----------------|----------|
 
 ## Sections (scroll order)
 | # | anchor | screenful | heading | hash | words |

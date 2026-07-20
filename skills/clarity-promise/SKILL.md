@@ -1,6 +1,6 @@
 ---
 name: clarity-promise
-description: Stage 1 of the clarity journey — audit message match and information scent. Does the page confirm, within one glance, the promise that brought the visitor here? Scored 0-10; a mismatch with the primary entry path is a journey gate.
+description: Stage 1 of the stranger test — audit message match and information scent. Does the page confirm, within one glance, the promise that brought the visitor here? Scored 0-10; a mismatch with the primary entry path is a journey gate.
 ---
 
 # clarity-promise — "Is this what I clicked for?"
@@ -12,7 +12,11 @@ Card) models visitors as scent-followers: when the cues on the new patch stop
 matching the goal, they go back the way they came. The back button is one
 click; the match must be visible in the first glance.
 
-Consume `audit/inventory.md` — especially `entry-context` and the fold crop.
+Consume `audit/inventory.md` — especially the entry matrix and the fold
+crop. Score message match per entry-matrix row: channels arrive at different
+awareness stages (a paid ad brings problem-aware visitors; a shared link
+brings most-aware ones), so one hero can match one channel and break
+another. Report the per-channel verdicts; the gate binds on the primary row.
 
 ## Rubric
 

@@ -1,6 +1,6 @@
 ---
 name: clarity-pricing
-description: Stage 5 of the clarity journey — audit the pricing page against the behavioral-economics literature (anchoring, decoy/compromise effects, loss aversion, mental accounting, pain of paying) and the catalog of SaaS pricing failures. Distinguishes ethical architecture from dark-pattern manipulation. Scored 0-10.
+description: Stage 5 of the stranger test — audit the pricing page against the behavioral-economics literature (anchoring, decoy/compromise effects, loss aversion, mental accounting, pain of paying) and the catalog of SaaS pricing failures. Distinguishes ethical architecture from dark-pattern manipulation. Scored 0-10.
 ---
 
 # clarity-pricing — "What does it cost me, and will I regret it?"

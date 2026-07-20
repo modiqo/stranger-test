@@ -1,6 +1,6 @@
 ---
 name: clarity-narrative
-description: Stage 3 of the clarity journey — the heart of the audit. Walk the page section by section carrying the question the visitor is holding at that moment; any section that answers no pending question is an exit ramp. Sequential by nature — never run in parallel. Scored 0-10.
+description: Stage 3 of the stranger test — the heart of the audit. Walk the page section by section carrying the question the visitor is holding at that moment; any section that answers no pending question is an exit ramp. Sequential by nature — never run in parallel. Scored 0-10.
 ---
 
 # clarity-narrative — the question ladder

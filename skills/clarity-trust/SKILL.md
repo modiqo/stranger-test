@@ -1,6 +1,6 @@
 ---
 name: clarity-trust
-description: Stage 4 of the clarity journey — audit the trust layer. Proof proximity (evidence adjacent to the claim it supports), specificity over adjectives, credibility signals, and risk reversal at the moment of doubt. Scored 0-10.
+description: Stage 4 of the stranger test — audit the trust layer. Proof proximity (evidence adjacent to the claim it supports), specificity over adjectives, credibility signals, and risk reversal at the moment of doubt. Scored 0-10.
 ---
 
 # clarity-trust — "Says who? What's the catch?"
