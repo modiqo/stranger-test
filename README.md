@@ -94,10 +94,10 @@ cleanly at synthesis.
   score at 6.0 no matter how good the pricing page is, because the visitor
   never gets there. The arithmetic encodes the journey's sequence.
 - **Ledger-ready findings** — every finding is emitted as structured JSON
-  (anchor, content hash, direction, severity, score impact), forward-
-  compatible with a persistent priors ledger so future runs can re-verify
-  prior findings instead of re-deriving them. (The priors system ships
-  separately; see Roadmap.)
+  (anchor, content hash, direction, severity, score impact), so future runs
+  can re-verify prior findings instead of re-deriving them. That ledger
+  exists: [priors](https://github.com/modiqo/priors) — see
+  [Iterating with your team](#iterating-with-your-team-stranger-test--priors).
 - **Doctrine suppression** — the audit reads the site's own design laws
   first and never recommends against them. Its job is to make the site the
   best version of *itself*, not to regress it toward the industry's mean
@@ -203,6 +203,66 @@ the best version of itself, not the industry's mean. *The fabrication
 line*: it will never advise inventing proof; missing evidence yields
 "instrument, then state," never a fake number.
 
+## Iterating with your team (stranger-test + priors)
+
+An audit is rarely a one-shot event. The real workflow looks like this:
+you're a designer, you run the audit on Monday and fix the top three
+findings. Then feedback arrives all week, in every shape feedback actually
+arrives — the founder records a two-minute Loom, sales forwards a call
+transcript where a prospect got confused by the pricing page, the PM leaves
+comments in Slack, and someone pushes back on one of your fixes ("the terse
+headline is intentional — leave it").
+
+The naive loop is painful: paste all of that into a fresh session and
+re-run. The agent audits from scratch, re-discovers issues you already
+fixed, re-raises the suggestion your team already rejected (worded slightly
+differently, so it feels new), and hands you a different wall of feedback
+than last time. Every run starts at zero; the team's judgment lives in
+chat scrollback.
+
+[**priors**](https://github.com/modiqo/priors) closes that loop. It keeps a
+small append-only ledger next to your project of everything a run *settled*
+— findings, fixes, and human decisions — and makes the next run honor it
+before saying anything new. Run the audit through it:
+
+```
+/with-priors stranger-test https://example.com
+```
+
+and three things change:
+
+- **Feedback becomes ledger entries, not paste-ins.** Anything tokenizable
+  is feedback: a video transcript, a sales-call recording, a Slack thread,
+  review comments, meeting notes. Drop it into the run and the decisions
+  inside it are recorded once — "sharp corners are intentional" becomes a
+  standing decision every future audit must honor, not a thing you re-explain
+  each session.
+- **Fixes are verified, not re-found.** stranger-test findings carry an
+  anchor and a content hash, so the next run can tell "same copy — finding
+  carried" from "copy changed — re-audited, and it's fixed." You get credit
+  for the work you did.
+- **Rejected advice stays rejected.** Once a human says no, the ledger's
+  keeper mechanically refuses the same suggestion on unchanged copy —
+  the agent can't re-litigate it just because it sampled a different
+  opinion today. Reversing a decision becomes an explicit question, never
+  fresh unsolicited advice.
+
+So instead of a new wall of feedback, a re-run opens with the delta:
+
+```text
+Checked against 21 priors:
+  ✓ 9 fixed — nice work
+  → 7 carried — same copy, same findings
+  ? 2 need your call (sales transcript conflicts with the "terse headline" decision)
+New this run: 3
+```
+
+Repeated audits converge instead of oscillating — and the whole team's
+judgment compounds, whichever medium it arrived in. The two projects are
+built for each other but ship independently: stranger-test emits
+ledger-ready findings; [priors](https://github.com/modiqo/priors) works
+with any judgment skill.
+
 ## Orchestration
 
 Stages 1–2 run in parallel (both consume the top of the page), stage 3 runs
@@ -217,11 +277,15 @@ stranger-test.md` is the conductor.
 
 ## Roadmap
 
-- **v2 — the priors ledger**: findings with identity and lifecycle
-  (open / fixed / accepted-tradeoff / regressed), re-verify-before-
-  re-discover, direction-conflict escalation, and content-hash-scoped
-  forgetting — so repeated audits converge instead of oscillating. Designed;
-  ships as its own system so any skill can adopt it.
+- **The priors ledger — shipped**, as its own system:
+  [modiqo/priors](https://github.com/modiqo/priors). Findings with identity
+  and lifecycle (open / fixed / accepted-tradeoff / regressed),
+  re-verify-before-re-discover, and content-hash-scoped forgetting.
+  Compose them today with `/with-priors stranger-test <url>` — see
+  [Iterating with your team](#iterating-with-your-team-stranger-test--priors).
+- **v2 — native ledger emission**: the synthesis pass proposes its findings
+  to the priors keeper directly (no wrapper), and direction-conflict
+  escalation lands as a first-class "your call" item.
 
 ## License
 
