@@ -13,7 +13,11 @@ grounded in the economists, psychologists, and practitioners who did the
 original work: Kahneman & Tversky, Thaler, Ariely, Simonson, Hermann Simon,
 Krug, the Heaths, Sugarman, Schwartz, Fogg, Cialdini, Pirolli & Card,
 Hopkins, Caples, Ogilvy, NN/g, Baymard. Every reference file cites its
-sources so your team can go read them.
+sources so your team can go read them — and
+[**docs/methodology.md**](docs/methodology.md) documents how each source
+became a check: the source → mechanism → falsifiable-check → weight chain,
+what counts as admissible evidence, and how the weights, bands, and gate
+values were set.
 
 What you get from a run: **a defensible read on how likely a visitor is to
 make it through** — plus the exact copy changes, ranked by what each one
@@ -104,6 +108,11 @@ cleanly at synthesis.
   (no reflexive "add a testimonial carousel").
 - **The fabrication line** — the audit never advises inventing proof.
   Missing evidence yields "instrument, then state", never a fake number.
+
+How all of this was constructed — the admission rules for sources, the
+translation chain from literature to check, and why the weights and gate
+values are what they are — is documented in
+[docs/methodology.md](docs/methodology.md).
 
 ## Install
 
