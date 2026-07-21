@@ -116,22 +116,35 @@ values are what they are — is documented in
 
 ## Install
 
-**As a plugin (recommended)** — inside Claude Code:
+### Claude Code
 
-```
-/plugin marketplace add modiqo/stranger-test
-/plugin install stranger-test@stranger-test-marketplace
+```bash
+claude plugin marketplace add modiqo/stranger-test
+claude plugin install stranger-test@stranger-test-marketplace
 ```
 
-**Manually** — copy the skills and the command into your user scope (the
-command registers as `/stranger-test`; the stage skills keep their
-`clarity-*` prefix — they are the clarity checks inside the instrument):
+The same commands work inside Claude Code when entered as slash commands.
+The command registers as `/stranger-test`; the stage skills keep their
+`clarity-*` prefix — they are the clarity checks inside the instrument.
+
+### Codex and other agent harnesses
 
 ```bash
 git clone https://github.com/modiqo/stranger-test
-cp -R stranger-test/skills/clarity-* ~/.claude/skills/
-cp stranger-test/commands/stranger-test.md ~/.claude/commands/
+cd stranger-test
+./install.sh
 ```
+
+| Harness | Integration |
+|---|---|
+| **Claude Code** | Native plugin (above), or the generic installer |
+| **Codex** | Paste [`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) into your project's `AGENTS.md`, pointed at the clone |
+| **OpenClaw** | Stage skills installed by `install.sh` |
+| **Kimi CLI** and other Agent-Skills harnesses | Point them at `skills/` |
+
+The instrument is plain markdown — a conductor command plus seven stage
+skills — so any harness that can read files can run it; the rubrics, bands,
+and gates are identical everywhere.
 
 Skills work best with browser tools available (Claude in Chrome, or any
 browser MCP) so the fold, scroll cues, and CTA walks can be *verified*.
