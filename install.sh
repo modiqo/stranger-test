@@ -53,9 +53,8 @@ fi
 
 echo ""
 echo "Not detected above? The instrument is identical everywhere:"
-echo "  → Codex:      run codex once (creates ~/.codex) and re-run this, or paste"
-echo "                adapters/AGENTS-snippet.md into your project's AGENTS.md"
-echo "                and point it at this clone: $SRC"
+echo "  → Codex:      codex plugin marketplace add modiqo/stranger-test"
+echo "                codex plugin add stranger-test@stranger-test-marketplace"
 echo "  → Kimi CLI:   also reads ~/.claude/skills and ~/.codex/skills natively —"
 echo "                an install for either harness above covers Kimi too"
 echo "  → Other       Agent-Skills harnesses: point them at $SRC/skills/"

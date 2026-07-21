@@ -129,30 +129,24 @@ The command registers as `/stranger-test`; the stage skills keep their
 
 ### Codex
 
-Inside a Codex session, `skill-installer` (ships with Codex) pulls the stage
-skills straight from GitHub into `~/.codex/skills/`:
-
-```text
-$skill-installer install every skills/clarity-* skill from modiqo/stranger-test
-```
-
-To also get the `/stranger-test` conductor prompt:
-
 ```bash
-curl -fsSL --create-dirs -o ~/.codex/prompts/stranger-test.md \
-  https://raw.githubusercontent.com/modiqo/stranger-test/main/commands/stranger-test.md
+codex plugin marketplace add modiqo/stranger-test
+codex plugin add stranger-test@stranger-test-marketplace
 ```
 
-Confirm with `/skills`. For a repo-scoped install that leaves `~/.codex`
+Codex reads the same marketplace manifest as Claude Code, so the plugin —
+all seven stage skills included — installs in two commands (verified with
+codex-cli 0.144). Confirm with `codex plugin list`; the skills load as
+`stranger-test:clarity-*`. For a repo-scoped install that leaves `~/.codex`
 untouched, paste
 [`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) into your
 project's `AGENTS.md`, pointed at the clone.
 
 ### Kimi CLI
 
-Nothing to install. Kimi Code CLI reads `~/.claude/skills/` and
-`~/.codex/skills/` natively, so either install above already covers it.
-Standalone, run `./install.sh` (below) or point Kimi at a clone with
+Kimi Code CLI reads `~/.claude/skills/` and `~/.codex/skills/` natively, so
+`./install.sh` (below) — which installs into both — covers Kimi with no
+Kimi-specific step. Or point Kimi at a clone directly with
 `kimi --skills-dir <clone>/skills`.
 
 ### Other agent harnesses
@@ -169,8 +163,8 @@ into each one it finds.
 | Harness | Integration |
 |---|---|
 | **Claude Code** | Native plugin (above), or the generic installer |
-| **Codex** | `$skill-installer` (above), or [`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) in your project's `AGENTS.md`, pointed at the clone |
-| **Kimi CLI** | Reads `~/.claude/skills/` and `~/.codex/skills/` natively — either install above covers it |
+| **Codex** | Native plugin via `codex plugin marketplace add`, or [`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) in your project's `AGENTS.md`, pointed at the clone |
+| **Kimi CLI** | `install.sh` — Kimi reads `~/.claude/skills/` and `~/.codex/skills/` natively |
 | **OpenClaw** and other Agent-Skills harnesses | Stage skills installed by `install.sh`, or point them at `skills/` |
 
 The instrument is plain markdown — a conductor command plus seven stage
