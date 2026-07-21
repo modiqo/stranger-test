@@ -127,7 +127,36 @@ The same commands work inside Claude Code when entered as slash commands.
 The command registers as `/stranger-test`; the stage skills keep their
 `clarity-*` prefix — they are the clarity checks inside the instrument.
 
-### Codex and other agent harnesses
+### Codex
+
+```bash
+git clone https://github.com/modiqo/stranger-test
+cd stranger-test
+mkdir -p ~/.codex/skills ~/.codex/prompts
+cp -R skills/clarity-* ~/.codex/skills/
+cp commands/stranger-test.md ~/.codex/prompts/
+```
+
+Codex picks the stage skills up automatically (list them with `/skills`);
+run the audit with the `/stranger-test` custom prompt. If `CODEX_HOME` is
+set, substitute it for `~/.codex`. For a repo-scoped install that leaves
+`~/.codex` untouched, paste
+[`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) into your
+project's `AGENTS.md`, pointed at the clone.
+
+### Kimi CLI
+
+```bash
+git clone https://github.com/modiqo/stranger-test
+cd stranger-test
+mkdir -p ~/.kimi-code/skills
+cp -R skills/clarity-* ~/.kimi-code/skills/
+```
+
+Kimi Code CLI loads user-level skills from `~/.kimi-code/skills/` (or
+`$KIMI_CODE_HOME/skills/` if that variable is set).
+
+### Other agent harnesses
 
 ```bash
 git clone https://github.com/modiqo/stranger-test
@@ -135,12 +164,16 @@ cd stranger-test
 ./install.sh
 ```
 
+The installer detects Claude Code, OpenClaw, Codex, and Kimi CLI and installs
+into each one it finds — so it is also the one-command path for the two
+harnesses above.
+
 | Harness | Integration |
 |---|---|
 | **Claude Code** | Native plugin (above), or the generic installer |
-| **Codex** | Paste [`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) into your project's `AGENTS.md`, pointed at the clone |
-| **OpenClaw** | Stage skills installed by `install.sh` |
-| **Kimi CLI** and other Agent-Skills harnesses | Point them at `skills/` |
+| **Codex** | Stage skills in `~/.codex/skills/`, or [`adapters/AGENTS-snippet.md`](adapters/AGENTS-snippet.md) in your project's `AGENTS.md`, pointed at the clone |
+| **Kimi CLI** | Stage skills in `~/.kimi-code/skills/` (or `$KIMI_CODE_HOME/skills/`) |
+| **OpenClaw** and other Agent-Skills harnesses | Stage skills installed by `install.sh`, or point them at `skills/` |
 
 The instrument is plain markdown — a conductor command plus seven stage
 skills — so any harness that can read files can run it; the rubrics, bands,
